@@ -1,0 +1,23 @@
+
+.table-container .title {
+    display: flex;
+    font-size: 1.2rem;
+    gap: 155px;
+
+    color: rgb(18, 101, 196);
+    
+}
+
+.table-container .table-row {
+    display: flex;
+    gap: 150px;
+    margin-top: 10px;
+}
+
+.table-container h3 {
+    font-size: 1.5rem;
+}
+
+.table-container h4 {
+    font-size: 1.3rem;
+}

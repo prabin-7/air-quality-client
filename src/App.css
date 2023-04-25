@@ -1,0 +1,20 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+  
+}
+
+.live-counter-wrapper {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 80px;
+}

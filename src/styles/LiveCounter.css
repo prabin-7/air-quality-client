@@ -1,0 +1,23 @@
+.live-counter-container {
+    display: flex;
+    gap: 250px;
+}
+
+.gas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 70px;
+}
+
+.gas .title {
+    font-size: 3rem;
+    color: rgb(18, 101, 196);
+
+}
+
+.gas .count {
+    font-size: 6.5rem;
+}

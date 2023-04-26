@@ -13,25 +13,29 @@ interface Props {
 const Table: React.FC<Props> = ({gasData}) => {
     return (
         <div className="table-container" >
-            <div className="title" >
-                <h3>Date</h3>
-                <h3>Smoke</h3>
-                <h3>LPG</h3>
-                <h3>CO</h3>
-            </div>
-            <div className="table-data" >
+            <h2 style={{marginBottom:20}}>Data History</h2>
+            <table>
+
+            <tr className="title" >
+                <th>Date</th>
+                <th>Smoke</th>
+                <th>LPG</th>
+                <th>CO</th>
+            </tr>
+            {/* <div className="table-data" > */}
                 
                 {
                     gasData.map((data,i) =>  (
-                        <div key={i} className={`table-row`}>
-                            <h4>{data.created_at.split("T")[0]}</h4>
-                            <h4>{data.smoke}</h4>
-                            <h4>{data.lpg}</h4>
-                            <h4>{data.co}</h4>
-                        </div>
+                        <tr key={i} className={`table-row`}>
+                            <td>{data.created_at.split("T")[0]}   {new Date(data.created_at).toLocaleTimeString()}</td>
+                            <td>{data.smoke}</td>
+                            <td>{data.lpg}</td>
+                            <td>{data.co}</td>
+                        </tr>
                     ))
                 }
-            </div>
+            {/* </div> */}
+                </table>
         </div>
     )
 }
